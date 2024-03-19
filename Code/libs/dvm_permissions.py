@@ -26,16 +26,7 @@ DVM_PERMISSIONS = {
     "RECEIVE_SMS": ["dangerous", "receive SMS", "Allows application to receive and process SMS messages. Malicious applications may monitor your messages or delete them without showing them to you."],
     "RECEIVE_MMS": ["dangerous", "receive MMS", "Allows application to receive and process MMS messages. Malicious applications may monitor your messages or delete them without showing them to you."],
     "RECEIVE_EMERGENCY_BROADCAST": [ "signatureOrSystem", "", "Allows an application to receive emergency cell broadcast messages, to record or display them to the user. Reserved for system apps." ],
-    "READ_CELL_BROADCASTS"          : [ "dangerous", "received cell broadcast messages", "Allows an application to read previously received cell broadcast "\
-																																								         "messages and to register a content observer to get notifications when "\
-																																								         "a cell broadcast has been received and added to the database. For "\
-																																								         "emergency alerts, the database is updated immediately after the "\
-																																								         "alert dialog and notification sound/vibration/speech are presented."\
-																																								         "The \"read\" column is then updated after the user dismisses the alert."\
-																																								         "This enables supplementary emergency assistance apps to start loading "\
-																																								         "additional emergency information (if Internet access is available) "\
-																																								         "when the alert is first received, and to delay presenting the info "\
-																																								         "to the user until after the initial alert dialog is dismissed." ],
+    "READ_CELL_BROADCASTS"          : [ "dangerous", "received cell broadcast messages", "Allows an application to read previously received cell broadcast ", "messages and to register a content observer to get notifications when ", "a cell broadcast has been received and added to the database. For ", "emergency alerts, the database is updated immediately after the ", "alert dialog and notification sound/vibration/speech are presented.", "The \"read\" column is then updated after the user dismisses the alert.", "This enables supplementary emergency assistance apps to start loading ", "additional emergency information (if Internet access is available) ", "when the alert is first received, and to delay presenting the info ", "to the user until after the initial alert dialog is dismissed." ],
 		"READ_SMS" : [ "dangerous" , "read SMS or MMS" , "Allows application to read SMS messages stored on your phone or SIM card. Malicious applications may read your confidential messages." ],
 		"WRITE_SMS" : [ "dangerous" , "edit SMS or MMS" , "Allows application to write to SMS messages stored on your phone or SIM card. Malicious applications may delete your messages." ],
 		"RECEIVE_WAP_PUSH" : [ "dangerous" , "receive WAP" , "Allows application to receive and process WAP messages. Malicious applications may monitor your messages or delete them without showing them to you." ],
@@ -138,18 +129,8 @@ DVM_PERMISSIONS = {
 		"BATTERY_STATS" : [ "dangerous" , "modify battery statistics" , "Allows the modification of collected battery statistics. Not for use by normal applications." ],
     "MODIFY_APPWIDGET_BIND_PERMISSIONS" : [ "signatureOrSystem", "query/set which applications can bind AppWidgets.", "Internal permission allowing an application to query/set which applications can bind AppWidgets." ],
 		"CHANGE_BACKGROUND_DATA_SETTING" : [ "signature" , "change background data usage setting" , "Allows an application to change the background data usage setting." ],
-		"GLOBAL_SEARCH" : [ "signatureOrSystem" , "" , "This permission can be used on content providers to allow the global search " \
-																									 "system to access their data.  Typically it used when the provider has some "  \
-																									 "permissions protecting it (which global search would not be expected to hold)," \
-																									 "and added as a read-only permission to the path in the provider where global "\
-																									 "search queries are performed.  This permission can not be held by regular applications; "\
-         																					 "it is used by applications to protect themselves from everyone else besides global search" ],
-		"GLOBAL_SEARCH_CONTROL" : [ "signature" , "" , "Internal permission protecting access to the global search "			  \
-																						       "system: ensures that only the system can access the provider " 		  \
-																						       "to perform queries (since this otherwise provides unrestricted "	  \
-																						       "access to a variety of content providers), and to write the "				\
-																						       "search statistics (to keep applications from gaming the source "		\
-																						       "ranking)." ],
+		"GLOBAL_SEARCH" : [ "signatureOrSystem" , "" , "This permission can be used on content providers to allow the global search " , "system to access their data.  Typically it used when the provider has some " , "permissions protecting it (which global search would not be expected to hold)," , "and added as a read-only permission to the path in the provider where global " , "search queries are performed.  This permission can not be held by regular applications; " , "it is used by applications to protect themselves from everyone else besides global search" ],
+		"GLOBAL_SEARCH_CONTROL" : [ "signature" , "" , "Internal permission protecting access to the global search " , "system: ensures that only the system can access the provider " , "to perform queries (since this otherwise provides unrestricted " , "access to a variety of content providers), and to write the " , "search statistics (to keep applications from gaming the source " , "ranking)." ],
 		"SET_WALLPAPER_COMPONENT" : [ "signatureOrSystem" , "set a live wallpaper" , "Allows applications to set a live wallpaper." ],
     "READ_DREAM_STATE"              : [ "signature", "", "Allows applications to read dream settings and dream state." ],
     "WRITE_DREAM_STATE"             : [ "signature", "", "Allows applications to write dream settings, and start or stop dreaming." ],
@@ -298,8 +279,7 @@ DVM_PERMISSIONS = {
     "BIND_PACKAGE_VERIFIER" : [ "signature", "", "Must be required by package verifier receiver, to ensure that only the system can interact with it.."],
     "SERIAL_PORT"                   : [ "signature", "", "Allows applications to access serial ports via the SerialManager." ],    
     "ACCESS_CONTENT_PROVIDERS_EXTERNALLY": [ "signature", "", "Allows the holder to access content providers from outside an ApplicationThread. This permission is enforced by the ActivityManagerService on the corresponding APIs,in particular ActivityManagerService#getContentProviderExternal(String) and ActivityManagerService#removeContentProviderExternal(String)."],
-		"UPDATE_LOCK"   : [ "signatureOrSystem", "", "Allows an application to hold an UpdateLock, recommending that a headless OTA reboot "\
-																								 "*not* occur while the lock is held"],
+		"UPDATE_LOCK"   : [ "signatureOrSystem", "", "Allows an application to hold an UpdateLock, recommending that a headless OTA reboot ", "*not* occur while the lock is held"],
 		"WRITE_GSERVICES" : [ "signatureOrSystem" , "modify the Google services map" , "Allows an application to modify the Google services map. Not for use by normal applications." ],
 
 		"ACCESS_USB" : [ "signatureOrSystem" , "access USB devices" , "Allows the application to access USB devices." ],
